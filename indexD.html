@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .img-container {
+            margin-bottom: 20px;
+            text-align: center; /* Center the image container */
+        }
+        .img-container img {
+            max-width: 80%; /* Reduced size of the image */
+            height: auto;
+            border: 2px solid white; /* Optional: Add a border for better visibility */
+            display: block; /* Ensure image is treated as a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+        .content {
+            text-align: center;
+            max-width: 80%; /* Ensure content fits well */
+        }
+        .moving-text {
+            white-space: nowrap;
+            display: inline-block;
+            color: red;
+            font-size: 24px;
+            margin-top: 20px;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .highlight {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <!-- Replace the src with your image URL -->
+        <img src="https://i.postimg.cc/Xqc4THCN/IMG-20240831-153027-981.jpg" alt="Image">
+    </div>
+    <div class="content">
+        <p class="highlight">Hacked By Dark Echo</p>
+        <p>Fuck On all</p>
+        <p>We hack your system and play with it.</p>
+        <p>Team Channel: <a href="https://t.me/DARK_1ECHO">https://t.me/DARK_1ECHO</a></p>
+        <div class="moving-text">
+            <p>Hacked By Dark Echo</p>
+        </div>
+    </div>
+</body>
+</html>
